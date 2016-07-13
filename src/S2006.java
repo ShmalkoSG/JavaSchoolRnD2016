@@ -11,5 +11,6 @@ public class S2006 {
         int dyuim=(int)Math.round((double)n /3);
         fut=(int)Math.round((double)n /36);
         System.out.println("Дюймов: "+ dyuim+ " Футов: "+fut);
+
     }
 }
