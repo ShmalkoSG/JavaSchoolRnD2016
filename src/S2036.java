@@ -14,6 +14,7 @@ public class S2036 {
         String[] b =new String[n];
         for (int i = 0; i < n; i++) {
             a[i] = in.nextLine();
+
         }
 //        for (int i=0;i<a.length;i++){
 //            for (int k=0;k<a[i].length();k++){
