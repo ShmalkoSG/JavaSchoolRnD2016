@@ -11,10 +11,10 @@ public class S2036 {
         System.out.println("Введите строки ");
         Scanner in = new Scanner(System.in);
         String[] a = new String[n];
-        char[] b = {'a', 'o', 'y', 'i', 'e', 'u'};
         for (int i = 0; i < n; i++) {
             a[i] = in.nextLine();
         }
+        char[] b = {'a', 'o', 'y', 'i', 'e', 'u'};
         for (int i = 0; i < a.length; i++) {
             int kol = 0;
             for (int k = 0; k < a[i].length(); k++) {
