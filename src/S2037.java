@@ -15,12 +15,12 @@ public class S2037 {
         int n = on.nextInt();
         int nachalo = 0;
         int konec=0;
-        while (konec < a.length()) {
-            nachalo=nachalo+konec;
-            konec = a.indexOf(",", nachalo+1);
-            if (konec<0) konec=a.length();
+        while ((konec+1) < a.length()) {
+            if (konec>0) nachalo=konec+1;
+            konec = a.indexOf(",", nachalo);
+            if (konec<0) konec=a.length()-1;
             if ((konec - nachalo) <= n) {
-                b = b + a.substring(nachalo, konec);
+                b = b + a.substring(nachalo, konec+1);
             }
         }
         System.out.println(b);
