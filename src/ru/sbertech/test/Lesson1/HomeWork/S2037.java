@@ -1,3 +1,5 @@
+package ru.sbertech.test.Lesson1.HomeWork;
+
 import java.util.Scanner;
 
 /**

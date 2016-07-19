@@ -1,3 +1,5 @@
+package ru.sbertech.test.Lesson1;
+
 /**
  * Created by Student on 14.07.2016.
  */

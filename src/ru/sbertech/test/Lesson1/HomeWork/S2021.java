@@ -1,8 +1,10 @@
-/**
+package ru.sbertech.test.Lesson1.HomeWork; /**
  * Created by svetlanashmalko on 13.07.16.
  */
+
 import java.util.Scanner;
-public class  S2022 {
+
+public class  S2021 {
 
     public static void main(String[] args) {
 
@@ -15,21 +17,20 @@ public class  S2022 {
         for (int i = 0; i < n; i++) {
             a[i] = in.nextInt();
         }
-        int k=0;
-        for (int i = 0; i < a.length; i++) {
-            for (int j = 0; j < a.length; j++) {
-                if (i != j){
-                    if (a[j]%a[i]==0) k=k+1;
 
-                }
-
-
+        for (int k = 0; k < 2; k++) {
+            int max = 0;
+            for (int i = 0; i < n; i++) {
+                if (a[i] > max) max = a[i];
+            }
+            for (int i = 0; i < n; i++) {
+                if (a[i] == max) a[i] = (int) Math.round(a[i] / 2);
             }
 
         }
-
-            System.out.print("Количество пар "+k);
-
+        for (int m = 0; m < a.length; m++) {
+            System.out.print(a[m]);
+        }
 
     }
 }

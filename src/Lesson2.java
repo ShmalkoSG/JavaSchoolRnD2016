@@ -8,7 +8,7 @@ import java.util.*;
 public class Lesson2{
     public static void main(String[] args) throws IOException {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("Lesson2/my_text.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("Lesson2/HomeWork/my_text.txt"));
             String line;
             List<String> my_col = new ArrayList<String>();
             while ((line = reader.readLine()) != null) {
