@@ -34,7 +34,6 @@ public class Task2 {
                             kol=kol+1;
                             String slovo=str.substring(begin,str.length());
                             Slovo tmpSlovo=new Slovo(slovo,slovo.length());
-
                             new_col.add(tmpSlovo);
                         }
                     }
