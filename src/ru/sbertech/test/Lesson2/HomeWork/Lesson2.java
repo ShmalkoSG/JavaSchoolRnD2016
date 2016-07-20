@@ -1,5 +1,7 @@
 package ru.sbertech.test.Lesson2.HomeWork;
 
+import ru.sbertech.test.Lesson3.HomeWork.ReadFile;
+
 import java.io.*;
 import java.util.*;
 
@@ -8,39 +10,33 @@ import java.util.*;
  */
 public class Lesson2{
     public static void main(String[] args) throws IOException {
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("Text/my_text.txt"));
-            String line;
-            List<String> my_col = new ArrayList<String>();
-            while ((line = reader.readLine()) != null) {
-                my_col.add(line);
-            }
-           Collections.sort(my_col, new Comparator<String>() {
+        ReadFile myReadFile =new ReadFile("Text/my_text.txt");
+        List <String> myCol=myReadFile.my_col;
+           Collections.sort(myCol, new Comparator<String>() {
                 public int compare(String o1, String o2) {
                     return o1.compareTo(o2);
                 }
             });
 
-           for(int i=0;i<my_col.size();i++) {
+           for(int i=0;i<myCol.size();i++) {
                 int begin=0;
                 int end=0;
-                String str=my_col.get(i);
+                String str=myCol.get(i);
                 while (end>=0) {
                         end = str.indexOf(' ');
                     if (end>=0) {
                         str = str.substring(begin, end) + str.substring(end + 1, str.length());
                     }
                 }
-                my_col.set(i,str);
+               myCol.set(i,str);
             }
 
-            System.out.println(my_col.size());
-            for(int i=0;i<my_col.size();i++){
-                System.out.println(my_col.get(i));
+            System.out.println(myCol.size());
+            for(int i=0;i<myCol.size();i++){
+                System.out.println(myCol.get(i));
             }
-        }
-        catch (IOException e)
-        {System.out.println("Wrong");}
+
+
 
 
     }

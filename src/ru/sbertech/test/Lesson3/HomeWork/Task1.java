@@ -1,9 +1,6 @@
 package ru.sbertech.test.Lesson3.HomeWork;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,20 +9,14 @@ import java.util.List;
 public class Task1 {
     public static void main(String[] args) throws IOException {
 
-        try {//Считываем в файл и построчно записываем в  ArrayList
-            BufferedReader reader = new BufferedReader(new FileReader("Text/my_text.txt"));
-            String line;
-            List<String> my_col = new ArrayList<String>();
-            while ((line = reader.readLine()) != null) {
-                my_col.add(line);
-            }
-
+        ReadFile myReadFile =new ReadFile("Text/my_text.txt");
+        List <String> myCol=myReadFile.my_col;
           //Считаем количество слов
             int kol=0;
-            for(int i=0;i<my_col.size();i++) {
+            for(int i=0;i<myCol.size();i++) {
                 int begin=0;
                 int end=0;
-                String str=my_col.get(i);
+                String str=myCol.get(i);
                 while (end>=0) {
                     end =str.indexOf(" ",begin);
                     if (end<0){
@@ -45,15 +36,14 @@ public class Task1 {
             }
 
             System.out.println(kol);
-            for(int i=0;i<my_col.size();i++){
-                System.out.println(my_col.get(i));
+            for(int i=0;i<myCol.size();i++){
+                System.out.println(myCol.get(i));
             }
         }
-        catch (IOException e){
-        System.out.println("Wrong");
-         }
 
-
-
-    }
 }
+
+
+
+
+
