@@ -21,7 +21,7 @@ public class WorkWithURL {
     u = in.next();
 
     try {
-        ReadContent(u);
+        readContent(u);
     } catch (IOException e) {
         e.printStackTrace();
         System.err.println("1");
@@ -35,7 +35,7 @@ public class WorkWithURL {
     }
     }
 
-    private static void ReadContent(String u) throws IOException, URISyntaxException {
+    private static void readContent(String u) throws IOException, URISyntaxException {
 
             URL url = null;
             url = new URL(u);
