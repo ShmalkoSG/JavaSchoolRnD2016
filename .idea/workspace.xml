@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2568c768-094c-4353-b22d-b160107f1884" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/AnotherFinallyTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/AnotherFinallyTestTryWithResources.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/Engine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/FinallyTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/MyException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/MySuperAutoCloseableClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/Ok.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/Parent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/SBTEmployee.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/SomeExceptionText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/StackOverflowTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson5/TestException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaschoolRnD2016.iws" />
@@ -1064,7 +1052,7 @@
       <workItem from="1468525128704" duration="18266000" />
       <workItem from="1468995645152" duration="4793000" />
       <workItem from="1469003780923" duration="21003000" />
-      <workItem from="1469384235073" duration="9977000" />
+      <workItem from="1469384235073" duration="9995000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1468432489817</created>
@@ -1185,11 +1173,18 @@
       <option name="project" value="LOCAL" />
       <updated>1469453061381</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Lesson5">
+      <created>1469600655832</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1469600655832</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103801000" />
+    <option name="totallyTimeSpent" value="103819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="728" extended-state="0" />
@@ -1270,7 +1265,8 @@
     <MESSAGE value="Lesson3 HomeWork Task1 is complete" />
     <MESSAGE value="Lesson3 HomeWork Task2 is complete" />
     <MESSAGE value="Lesson4 HomeWork partly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson4 HomeWork partly" />
+    <MESSAGE value="Lesson5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
