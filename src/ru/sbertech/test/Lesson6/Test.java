@@ -1,8 +1,5 @@
 package ru.sbertech.test.Lesson6;
 
-/**
- * Created by svetlanashmalko on 31.07.16.
- */
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.List;

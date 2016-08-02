@@ -1,8 +1,5 @@
 package ru.sbertech.test.Lesson6;
 
-/**
- * Created by svetlanashmalko on 31.07.16.
- */
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -12,6 +9,6 @@ import java.lang.annotation.RetentionPolicy;
 
 //@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
- @interface ValidLenth {
+@interface ValidLength {
     int value() default 4;
 }
