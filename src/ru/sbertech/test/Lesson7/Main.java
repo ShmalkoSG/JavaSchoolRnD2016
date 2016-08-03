@@ -1,8 +1,5 @@
 package ru.sbertech.test.Lesson7;
 
-import java.net.URL;
-import java.net.URLClassLoader;
-
 /**
  * Created by Student on 01.08.2016.
  */
@@ -23,12 +20,12 @@ public class Main {
         Object ob = persClazz.newInstance();
         mm.invoke(ob);*/
 
-        URLClassLoader urlClassLoader = new URLClassLoader(new URL[] {new URL ("file:/J:/lecture7/Person.jar")});
+       // URLClassLoader urlClassLoader = new URLClassLoader(new URL[] {new URL ("file:/J:/lecture7/Person.jar")});
 
         Calculator calculator = new CalculatorImpl();
         calculator.calc();
 
-        Class <?> calcClazz = urlClassLoader.loadClass("ru.sbt.bvv.lecture7.CalculatorImpl");
-        ((Calculator)calcClazz.newInstance()).calc();
+       // Class <?> calcClazz = urlClassLoader.loadClass("ru.sbt.bvv.lecture7.CalculatorImpl");
+     //   ((Calculator)calcClazz.newInstance()).calc();
     }
 }
