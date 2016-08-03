@@ -11,8 +11,15 @@ import java.net.URLClassLoader;
  */
 public class Pluginnns {
     public static void main(String[] args) {
+        File pluginDir;
         // Получаем массив jar-файлов из папки plugins
-        File pluginDir = new File("pluginRootDirectory.pluginName");
+        pluginDir = new File("Text/pluginName");
+
+
+
+
+        System.out.println(pluginDir.list());
+
 
         File[] jars = pluginDir.listFiles(new FileFilter() {
             public boolean accept(File file) {
@@ -28,7 +35,7 @@ public class Pluginnns {
             try {
                 URL jarURL = jars[i].toURI().toURL();
                 URLClassLoader classLoader = new URLClassLoader(new URL[]{jarURL});
-                pluginClasses[i] = classLoader.loadClass("Desctop.Java1.JavaSchoolRnD2016.TestTTT");
+                pluginClasses[i] = classLoader.loadClass("ru.sbertech.test.Lesson7.Homework.HelloPlugin");
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();

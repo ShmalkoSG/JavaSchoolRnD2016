@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="pluginRootDirectory">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../src/ru/sbertech/test/Lesson7/Homework/pluginRootDirectory" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../src/ru/sbertech/test/Lesson7/Homework/pluginRootDirectory" recursive="false" />
+  </library>
+</component>
