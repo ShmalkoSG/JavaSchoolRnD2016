@@ -3,8 +3,8 @@ package ru.sbertech.test.Lesson6;
 /**
  * Created by svetlanashmalko on 31.07.16.
  */
-public class C extends B implements I{
-    @ValidLength(5)
+public class C extends B {
+   /* @ValidLength(5)
     private String str = "first";
     public B bC;
 
@@ -12,7 +12,7 @@ public class C extends B implements I{
     }
 
     @Override
-    public void someMethod(String param){
-        System.out.println(str + ' ' + param);
+ */   public void someMethod(String param){
+        System.out.println(' ' + param);
     }
 }

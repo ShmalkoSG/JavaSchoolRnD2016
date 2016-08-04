@@ -1,9 +1,8 @@
 package ru.sbertech.test.Lesson6;
 
 /**
- * Created by svetlanashmalko on 31.07.16.
+ * Created by Student on 28.07.2016.
  */
-public class B extends A{
-    protected A aB;
+public class B extends А{
     public void mB(){};
 }

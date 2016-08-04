@@ -6,9 +6,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Scanner;
 
-/**
- * Created by svetlanashmalko on 27.07.16.
- */
+
 public class WorkWithURL {
 
 
@@ -37,9 +35,8 @@ public class WorkWithURL {
 
     private static void readContent(String u) throws IOException, URISyntaxException {
 
-            URL url = null;
-            url = new URL(u);
-            Desktop.getDesktop().browse(url.toURI());
+            URL url = new URL(u);
+        Desktop.getDesktop().browse(url.toURI());
 
 
 
