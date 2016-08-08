@@ -10,20 +10,20 @@ import java.io.Serializable;
 public class Student implements Serializable{
 
     private String group;
-   // private int avgMark;
+    private int avgMark;
 
-   /* public Student(){
+    public Student(){
         group="default";
         avgMark=3;
 
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Student student= new Student();
         String fileName="c:/student.bin";
         try (FileOutputStream fis=new FileOutputStream(fileName);
         ObjectOutputStream oos=new ObjectOutputStream(fis)){
             oos.writeObjext(student);
-     }
+     }*/
     //}
 }
