@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2568c768-094c-4353-b22d-b160107f1884" name="Default" comment="Lesson8 Classwork">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson7/Homework/pluginRootDirectory/pluginName/HelloPlugin 2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson7/Homework/pluginRootDirectory/pluginName/HelloPlugin.jar" />
+    <list default="true" id="2568c768-094c-4353-b22d-b160107f1884" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson9HW/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson9HW/.idea/copyright/profiles_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson9HW/.idea/misc.xml" />
@@ -18,18 +16,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson9HW/pom.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson9HW/src/main/java/DemoHW.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lesson9HW/src/main/java/SerializableUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson10/Apple.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson10/LTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson11/Multitreading.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson11/SomeTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson11/SomeThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson8/HomeWork/MyIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson8/HomeWork/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson8/HomeWork/Test.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ru/sbertech/test/Lesson6/ValidLength.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestTTT/.idea/workspace.xml" afterPath="$PROJECT_DIR$/TestTTT/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestTTT/src/ru/sbertech/test/Lesson7/Homework/HelloPlugin.java" afterPath="$PROJECT_DIR$/TestTTT/src/ru/sbertech/test/Lesson7/Homework/HelloPlugin.java" />
     </list>
     <ignored path="JavaschoolRnD2016.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1043,7 +1030,7 @@
       <workItem from="1470206159201" duration="16797000" />
       <workItem from="1470507983889" duration="6866000" />
       <workItem from="1470862286388" duration="373000" />
-      <workItem from="1471423881685" duration="332000" />
+      <workItem from="1471423881685" duration="367000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1468432489817</created>
@@ -1259,7 +1246,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158696000" />
+    <option name="totallyTimeSpent" value="158731000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1354,7 +1341,8 @@
     <MESSAGE value="Lesson6 Classwork" />
     <MESSAGE value="Lesson7 Classwork" />
     <MESSAGE value="Lesson8 Classwork" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson8 Classwork" />
+    <MESSAGE value="Lesson11 Classwork" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson11 Classwork" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1600,6 +1588,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
