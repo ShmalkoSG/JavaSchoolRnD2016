@@ -1,7 +1,9 @@
 package ru.sbertech.test.Lesson8.HomeWork;
 
+import org.junit.Before;
+import org.junit.Test;
 import ru.sbertech.test.Lesson3.Person;
-import org.junit;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -10,7 +12,7 @@ import static ru.sbertech.test.Lesson8.HomeWork.MyIterator.getIterator;
 /**
  * Created by svetlanashmalko on 07.08.16.
  */
-public class Test {
+public class Test1 {
 
    @Before
     public static void setUp () {
