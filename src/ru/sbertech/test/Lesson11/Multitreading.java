@@ -3,9 +3,6 @@ package ru.sbertech.test.Lesson11;
 /**
  * Created by svetlanashmalko on 17.08.16.
  */
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Created by Student on 15.08.2016.
  */

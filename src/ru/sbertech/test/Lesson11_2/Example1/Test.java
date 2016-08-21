@@ -4,7 +4,7 @@ package ru.sbertech.test.Lesson11_2.Example1;
  * Created by Student on 18.08.2016.
  */
 public class Test implements Runnable{
-    private boolean endFlag=false;
+    private boolean endFlag = false;
     public void end(){
         setEndFlag(true);
     }
@@ -13,12 +13,11 @@ public class Test implements Runnable{
         return endFlag;
     }
 
-    public void setEndFlag(boolean endFlag) {
+    public synchronized void setEndFlag(boolean endFlag) {
         this.endFlag = endFlag;
     }
 
-
-    public synchronized void run(){
+    public void run(){
         while (!isEndFlag()){
             try {
                 Thread.sleep(1);
