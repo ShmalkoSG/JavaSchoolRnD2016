@@ -1,6 +1,9 @@
 /**
  * Created by svetlanashmalko on 10.08.16.
  */
+/**
+ * Created by svetlanashmalko on 10.08.16.
+ */
 import java.io.Console;
 import java.io.File;
 import java.io.IOException;
@@ -38,22 +41,40 @@ public class DemoHW {
 
         void start() {
             Console console = System.console();
-            if (console == null) {
+           /* if (console == null) {
                 throw new IllegalStateException("Can't use console");
-            }
-            System.out.print("Enter your username: ");
-            String username = console.readLine();
+            }*/
+            System.out.print("Мы в клиенте");
 
-            String line;
-            System.out.print("Enter message:");
-            while ((line = console.readLine()) != null) {
+            // System.out.print(messageService.receive());
+            try {
+                Message receivedMessage = messageService.receive();
+                System.out.println("new message: " + receivedMessage.id);
+                System.out.println("       from: " + receivedMessage.user);
+                System.out.println("       body: " + receivedMessage.message);
+                System.out.println("End client!");
+
+            }
+            catch (Exception e){
+               // System.out.println(e);
+                System.out.print("Enter your username: ");
+                String username = console.readLine();
+
+                String line;
+                System.out.print("Enter message:");
+                line = console.readLine();
+                //  while ((line = console.readLine()) != null) {
                 Message message = new Message(username, line);
                 messageService.send(message);
-                System.out.print("Enter message:");
+                //    System.out.print("Enter message:");
+                // }
+                System.out.println("End client!");
             }
-            System.out.println("End client!");
+
         }
     }
+
+
 
     static class Server {
         String lastReceivedMessageKey;
@@ -66,16 +87,19 @@ public class DemoHW {
         }
 
         void start() {
-            while (true) {
-                System.out.println("Waiting for message...");
-                Message receivedMessage = messageService.receive();
-                if (!receivedMessage.getKey().equals(lastReceivedMessageKey)) {
-                    lastReceivedMessageKey = receivedMessage.getKey();
-                    System.out.println("new message: " + receivedMessage.id);
-                    System.out.println("       from: " + receivedMessage.user);
-                    System.out.println("       body: " + receivedMessage.message);
-                }
+            // while (true) {
+            System.out.println("Waiting for message...");
+            Message receivedMessage = messageService.receive();
+            if (!receivedMessage.getKey().equals(lastReceivedMessageKey)) {
+                lastReceivedMessageKey = receivedMessage.getKey();
+                System.out.println("new message: " + receivedMessage.id);
+                System.out.println("       from: " + receivedMessage.user);
+                System.out.println("       body: " + receivedMessage.message);
+
+                Message message = new Message(receivedMessage.user, receivedMessage.message);
+                messageService.send(message);
             }
+            // }
         }
     }
 
@@ -95,6 +119,9 @@ public class DemoHW {
                 break;
             case "server":
                 new Server(messageService).start();
+                break;
+            case "client2":
+                new Client(messageService).start();
                 break;
             default:
                 showUsage();
@@ -120,17 +147,18 @@ public class DemoHW {
 
         @Override
         public Message receive() {
-            while (true) {
-                if (messageFile.exists() && messageFile.lastModified() < System.currentTimeMillis() - 500L) {
-                    try {
-                        Message message = (Message) SerializableUtils.deserialize(messageFile.getAbsolutePath());
-                        messageFile.delete();
-                        return message;
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
+            // while (true) {
+            if (messageFile.exists() && messageFile.lastModified() < System.currentTimeMillis() - 500L) {
+                try {
+                    Message message = (Message) SerializableUtils.deserialize(messageFile.getAbsolutePath());
+                    messageFile.delete();
+                    return message;
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
                 }
             }
+            // }
+            return null;
         }
     }
 }

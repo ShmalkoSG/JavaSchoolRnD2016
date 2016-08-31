@@ -1,8 +1,8 @@
+import java.io.*;
+
 /**
  * Created by svetlanashmalko on 10.08.16.
  */
-import java.io.*;
-
 public class SerializableUtils {
     public static void serialize(String filename, Object object) throws IOException {
         try (FileOutputStream fos = new FileOutputStream(filename);
