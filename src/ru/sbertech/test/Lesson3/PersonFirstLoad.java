@@ -31,7 +31,7 @@ public class PersonFirstLoad {
         return persons;
     }
 
-    public static Map<String,Person> init(Map<String, Person> persons){
+        public static Map<String,Person> init(Map<String, Person> persons){
         persons.put("1", new Person(1L,"Байда Илья Вадимович","79185551234"));
         persons.put("2" , new Person(2L,"Истамов Аскар Зохитович","79185551233"));
         persons.put("3" , new Person(3L,"Кириловский Сергей Владимирович","79185551232"));
