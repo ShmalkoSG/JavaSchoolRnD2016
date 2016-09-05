@@ -9,14 +9,15 @@ import java.net.MulticastSocket;
  * Created by Student on 29.08.2016.
  */
 public class ServerUDP {
-    public static final int PORT = 3333;
+    public static final int PORT = 8080;
     public static final String HOST = "localhost";
     public static final int BUFFER_SIZE = 256;
 
     public static void main(String[] args) throws IOException {
         try (/*DatagramSocket socket = new DatagramSocket(PORT)*/
              MulticastSocket socket = new MulticastSocket(PORT)){
-            InetAddress multicastAddress = InetAddress.getByName("224.0.0.22");
+            InetAddress multicastAddress = InetAddress.getByName("ff02::1");
+         //   InetAddress multicastAddress = InetAddress.getByName("239.255.255.0");
             socket.joinGroup(multicastAddress);
             byte[] buffer = new byte[BUFFER_SIZE];
             String command = "";

@@ -170,10 +170,10 @@ public final class MoneyAccount {
         point1.setCacheAmount(5);
         point1.setUserName("Вася");
 
-        CachePoint poFint2 = new CachePoint();
+        CachePoint point2 = new CachePoint();
         point2.setId(2);
         point2.setCacheAmount(5);
-        point2.setUserName("Петя");F
+        point2.setUserName("Петя");
 
         CachePoint point3 = new CachePoint();
         point3.setId(3);
