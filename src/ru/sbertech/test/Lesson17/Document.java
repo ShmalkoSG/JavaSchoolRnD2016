@@ -5,7 +5,29 @@ package ru.sbertech.test.Lesson17;
  */
 public class Document {
     private Client clientA;
-private String user;
+    private Account accA;
+
+    private Client clientB;
+    private Account accB;
+
+    private String user;
+
+    private Long summa;
+
+    private ExecBehavior execBehavior;
+
+    public ExecBehavior getExecBehavior() {
+        return execBehavior;
+    }
+
+    public void setExecBehavior(ExecBehavior execBehavior) {
+        this.execBehavior = execBehavior;
+    }
+
+    public Document(ExecBehavior execBehavior) {
+        this.execBehavior = execBehavior;
+    }
+
     public Client getClientA() {
         return clientA;
     }
@@ -46,19 +68,15 @@ private String user;
         this.summa = summa;
     }
 
-    private Account accA;
-    private Client clientB;
-    private Account accB;
-    private Long summa;
-
-
     public void print(){
-        System.out.println("summa"+ summa);
+        System.out.println("summa:" + summa);
     }
+
     public void printUserInfo(){
-        System.out.println("Document user"+user);
+        System.out.println("Document User:" + user);
     }
+
     public void savetoDB(){
-        System.out.println("save in DB ");
+        System.out.println("Save document in Database");
     }
 }
