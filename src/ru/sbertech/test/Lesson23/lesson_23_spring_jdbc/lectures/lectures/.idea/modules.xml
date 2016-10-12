@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lectures.iml" filepath="$PROJECT_DIR$/lectures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patterns/patterns.iml" filepath="$PROJECT_DIR$/patterns/patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plain-jdbc/plain-jdbc.iml" filepath="$PROJECT_DIR$/plain-jdbc/plain-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-jdbc-annotations/spring-jdbc-annotations.iml" filepath="$PROJECT_DIR$/spring-jdbc-annotations/spring-jdbc-annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-jdbc-namedparam/spring-jdbc-namedparam.iml" filepath="$PROJECT_DIR$/spring-jdbc-namedparam/spring-jdbc-namedparam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-jdbc-resultsetextractor/spring-jdbc-resultsetextractor.iml" filepath="$PROJECT_DIR$/spring-jdbc-resultsetextractor/spring-jdbc-resultsetextractor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-jdbc-rowmapper/spring-jdbc-rowmapper.iml" filepath="$PROJECT_DIR$/spring-jdbc-rowmapper/spring-jdbc-rowmapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_2/spring_2.iml" filepath="$PROJECT_DIR$/spring_2/spring_2.iml" />
+    </modules>
+  </component>
+</project>
